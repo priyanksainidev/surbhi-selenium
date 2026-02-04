@@ -21,6 +21,7 @@ public class Locators {
 	        driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 	        driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 	        driver.findElement(By.className("signInBtn")).click();
+//	        Commit test
 	        
 	        // Wait for the error message to appear
 	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("p.error")));
