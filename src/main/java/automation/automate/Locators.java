@@ -2,6 +2,7 @@ package automation.automate;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,6 +42,12 @@ public class Locators {
 	        driver.findElement(By.xpath("//form/input[3]")).sendKeys("8377917200");
 	        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 	        System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+	        driver.findElement(By.className("go-to-login-btn")).click();
+	        driver.findElement(By.id("inputUsername")).sendKeys("rahul");
+	        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+	        driver.findElement(By.id("chkboxOne")).click();
+	        driver.findElement(By.className("signInBtn")).click();
+	        
 	        //driver.close();
 	}
 
